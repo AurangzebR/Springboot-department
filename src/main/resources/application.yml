@@ -27,7 +27,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/dcbapp-qa
-    password: $eniorCitizen@65
+    password:
   jpa:
     hibernate:
       ddl-auto: update
@@ -45,7 +45,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/dcbapp-prod
-    password: $eniorCitizen@65
+    password:
   jpa:
     hibernate:
       ddl-auto: update
