@@ -1,0 +1,32 @@
+hibernate validators
+RestController
+GETMapping
+PathVariable
+RequestBody
+FindByDepartmentNameIgnoreCase
+Logger from org.slf4j.Logger;
+LomBook (no need getter and setters) add dependency and plugin @Data, @  @Data,@NoArgsConstructor, @AllArgsConstructor
+error class extends Exception and override its method
+#Exception Handling
+##Test
+#JUNIT test
+JUnit Jupiter (assertEqual)
+org.mockito
+EntityManager (entityManager.presist(department)
+Builder
+
+#WebMvcTest (@WebMvcTest(DepartmentController.class)
+
+# Spring boot Acruator ( to monitor health, storage and usage etc of the application)
+# need to search JMX
+# Customr Actuator
+# include or exclude endpoints
+
+####### video 4:30 what you learnt so far ########
+
+
+
+
+
+
+

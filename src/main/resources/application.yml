@@ -1,0 +1,59 @@
+server:
+  port: '8000'
+
+
+welcome:
+  message: hello world welcome
+spring:
+  profiles:
+    active: qa
+---
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/dcbapp
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
+---
+spring:
+  profiles: qa
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/dcbapp-qa
+    password: $eniorCitizen@65
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env, beans"
+---
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/dcbapp-prod
+    password: $eniorCitizen@65
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
+
+
+
+
+
+
